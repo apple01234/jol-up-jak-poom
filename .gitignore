@@ -1,0 +1,43 @@
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# Testing
+/coverage
+
+# Frontend build
+/frontend/build
+/frontend/dist
+
+# Backend
+/backend/venv
+/backend/__pycache__
+/backend/*.env
+
+# AI Models
+/ai-models/*.pth
+/ai-models/*.pt
+/ai-models/*.onnx
+/ai-models/data
+
+# Unity
+/unity-client/Library/
+/unity-client/Temp/
+/unity-client/Obj/
+/unity-client/Build/
+/unity-client/Builds/
+/unity-client/Logs/
+/unity-client/UserSettings/
+/unity-client/MemoryCaptures/
+/unity-client/Assets/AssetStoreTools*
+
+# IDE config
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS-specific
+.DS_Store
+Thumbs.db
