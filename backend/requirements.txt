@@ -1,0 +1,8 @@
+fastapi
+python-jose[cryptography]
+passlib[bcrypt]
+uvicorn
+httpx
+transformers
+accelerate
+soundfile
