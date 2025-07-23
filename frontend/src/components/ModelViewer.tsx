@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useGLTF, useAnimations } from '@react-three/drei';
+import { useGLTF, useAnimations, Html } from '@react-three/drei';
 import useCharacterStore from '../store/useCharacterStore';
 
 interface ModelViewerProps {
@@ -29,16 +29,18 @@ const ModelViewer: React.FC<ModelViewerProps> = ({ modelPath }) => {
   return (
     <>
       <primitive object={gltf.scene} scale={1} castShadow receiveShadow />
-      <div style={{ position: 'absolute', bottom: 20, left: 20, background: 'rgba(0,0,0,0.5)', padding: 10, borderRadius: 5, color: 'white' }}>
-        <h3>Animations</h3>
-        <select onChange={(e) => setCurrentAnimation(e.target.value)} value={currentAnimation || ''}>
-          {names.map((name) => (
-            <option key={name} value={name}>
-              {name}
-            </option>
-          ))}
-        </select>
-      </div>
+      <Html position={[0, -2, 0]}>
+        <div style={{ background: 'rgba(0,0,0,0.5)', padding: 10, borderRadius: 5, color: 'white' }}>
+          <h3>Animations</h3>
+          <select onChange={(e) => setCurrentAnimation(e.target.value)} value={currentAnimation || ''}>
+            {names.map((name) => (
+              <option key={name} value={name}>
+                {name}
+              </option>
+            ))}
+          </select>
+        </div>
+      </Html>
     </>
   );
 };

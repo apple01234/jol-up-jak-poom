@@ -6,3 +6,5 @@ httpx
 transformers
 accelerate
 soundfile
+sqlalchemy
+psycopg2-binary

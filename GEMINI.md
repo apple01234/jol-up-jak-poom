@@ -1,61 +1,115 @@
-# AI Girlfriends Platform - Project Context for Gemini CLI
+✅ 1. Gemini CLI Final Integrated Prompt - English Version
+🌟 Project Overview
+You are an elite UI/UX designer, frontend engineer, and AI platform architect.
 
-This document provides an overview of the "AI Girlfriends Platform" project, intended to guide the Gemini CLI in understanding its context, goals, and technical stack.
+📌 Platform: AI Girlfriends Platform
+Core Concept: A personalized 3D AI companion platform providing customized modeling, voice interaction, and a user-generated resource marketplace.
 
-## 1. Project Overview
-**Project Name:** AI 여친 플랫폼 (AI Girlfriends Platform)
-**Core Concept:** A personalized 3D AI companion platform offering customized modeling and voice interactions, alongside a resource marketplace for user-generated content.
-**Target Audience:** Primarily 20-35 year old males interested in anime/gaming culture, AI early adopters, users who enjoy customization, and 3D modeling artists/creators.
+Target Audience: Males aged 20-35 interested in anime/gaming culture, AI early adopters, 3D modelers, and creators.
 
-## 2. Core Functionality
-The platform offers a tiered service model (Free, Premium, Premium Pro) with varying access to features. Key functionalities include:
-*   **Dual Conversation Modes:** Real-time chat and voice interactions with AI companions.
-*   **Customization:** Users can upload and customize 3D models (characters, outfits), voice packs, and animations.
-*   **Resource Marketplace:** A platform for users to buy and sell 3D models, voice packs, animations, and AI persona templates using an in-app currency ("Heart Coin").
-*   **AI Integration:** Utilizes advanced AI for text generation (GPT-4 Turbo), speech-to-text (Whisper), text-to-speech (XTTS), and emotion analysis.
+Key Features:
 
-## 3. Technology Stack
-The project is built with a modern, scalable architecture:
+Real-time text & voice conversations (GPT-4 Turbo, Whisper, XTTS)
 
-### Frontend
-*   **Framework:** React 18 + TypeScript
-*   **3D Rendering:** Three.js + React Three Fiber
-*   **State Management:** Zustand + React Query
-*   **UI/Styling:** Tailwind CSS + Radix UI (Planned)
-*   **Real-time Communication:** Socket.io-client, WebRTC
+3D model & voice pack customization
 
-### Backend
-*   **Framework:** FastAPI + Python 3.9
-*   **Database:** PostgreSQL + SQLAlchemy
-*   **Caching/Background Jobs:** Redis + Celery
-*   **File Storage:** MinIO (S3 compatible)
-*   **Authentication:** JWT + OAuth 2.0
-*   **Payments:** Stripe API
+Marketplace powered by “Heart Coin” in-app currency
 
-### AI Services
-*   **Text-to-Speech (TTS):** XTTS (Coqui TTS)
-*   **Speech-to-Text (STT):** OpenAI Whisper
-*   **Conversation AI:** OpenAI GPT-4 Turbo
-*   **Emotion Analysis:** HuggingFace Transformers
-*   **GPU Acceleration:** CUDA + PyTorch
+Tech Stack:
 
-### Infrastructure
-*   **Containerization/Orchestration:** Docker + Kubernetes
-*   **Load Balancing:** NGINX
-*   **CDN:** CloudFlare
-*   **CI/CD:** GitHub Actions
+Frontend: React18, TypeScript, Three.js + React Three Fiber, Zustand, React Query, Tailwind CSS, Radix UI (planned)
 
-## 4. Development Status & Roadmap
-The project is currently in its early phases, with a detailed roadmap outlined in `docs/README.md`. Key phases include:
-*   **Phase 1 (MVP):** Basic 3D rendering, character system, authentication, chat mode, and initial AI integration.
-*   **Phase 2 (Advanced Features):** Voice cloning, real-time voice chat, lip-sync, and advanced 3D model customization.
-*   **Phase 3 (Marketplace):** Implementation of the in-app currency, payment system, and the full resource marketplace.
-*   **Phase 4 (Launch & Optimization):** Final testing, performance tuning, and launch preparations.
+Backend: FastAPI, PostgreSQL, Redis, Celery, MinIO, JWT/OAuth2, Stripe
 
-## 5. Important Considerations for Gemini
-*   **Primary Languages:** Python (Backend, AI), TypeScript (Frontend).
-*   **Frontend Styling:** Tailwind CSS is the chosen UI framework for the frontend. When making frontend changes, prioritize using or integrating with Tailwind CSS.
-*   **Project Structure:** The project is divided into `frontend/`, `backend/`, `ai-models/`, `unity-client/`, and `deployment/` directories.
-*   **Error Handling:** Ensure robust error handling, especially for API integrations and real-time communication.
-*   **Performance:** Optimization for 3D rendering, network, and AI processing is a critical aspect of the project.
-*   **Security & Privacy:** Adherence to data protection regulations (GDPR/CCPA) and secure authentication practices are paramount.
+AI: GPT-4 Turbo, XTTS (Coqui), Whisper, Emotion Analysis (HuggingFace)
+
+Infrastructure: Docker, Kubernetes, NGINX, Cloudflare, GitHub Actions
+
+🎨 Core Design Philosophy
+1. Visual Impact & Immersion
+Elicit a “Wow, this is insane” reaction.
+
+Inspired by The Game Awards: high-contrast dark theme, cinematic cyberpunk aesthetics.
+
+High-quality images, videos, and 3D assets are central to user immersion.
+
+2. Modern & Clean Layout
+Grid-based structure + minimalism.
+
+Focus on content and interaction; avoid unnecessary decoration.
+
+Glassmorphism, Neumorphism, Gradient Magic integrated creatively.
+
+3. Color System
+css
+--primary: #00f5ff; /* Cyber Blue */
+--secondary: #ff006e; /* Neon Pink */
+--accent: #8b5cf6; /* Purple */
+--success: #00ff88; /* Neon Green */
+--warning: #ffd700; /* Gold */
+--danger: #ff3366; /* Neon Red */
+--bg-primary: #0a0a0f; /* Deep Dark */
+--bg-secondary: #1a1a2e; /* Midnight Blue */
+--bg-tertiary: #16213e; /* Steel Blue */
+--bg-glass: rgba(255, 255, 255, 0.1);
+--text-primary: #ffffff;
+--text-secondary: #b8bcc8;
+--text-tertiary: #6b7280;
+--text-accent: #00f5ff;
+4. Typography
+Primary: Futuristic monospace or tech-style fonts
+
+Secondary: Inter, Poppins, Roboto
+
+Hierarchy: H1 (neon/gradient), H2 (underline/background), H3-H6 consistent reduction, code blocks dark themed with copy button, line numbers, language icons
+
+🚀 UI/UX Implementation Requirements
+✅ Layout Structure
+Hero Section
+
+Fullscreen header
+
+Particle or geometric animated background
+
+Typing effect for titles
+
+Scroll-down indicator
+
+Navigation
+
+Fixed sidebar/topbar, section progress bar, smooth scroll, current section highlight
+
+Content Sections
+
+Glassmorphism card layouts, parallax, interactive hover, expand/collapse
+
+Code Blocks
+
+CSS-only copy button, checkmark animation on click, language-based colors/icons, collapse/expand functionality
+
+🎬 Animation System
+Page load: sequential fade-in, typing, progress bar fill
+
+Scroll-based: Intersection Observer, scroll-progress driven animations
+
+Hover: card lift-up, neon glow, moving background gradients, text color transitions
+
+Click/touch: ripple effects, scale up/down, color transitions
+
+🎯 Special Features
+Dark/Light theme toggle (CSS Variables, smooth 0.3s transition)
+
+Accessibility (WCAG 2.1 AA compliance, keyboard navigation, screen reader optimization, prefers-reduced-motion)
+
+Performance optimization (CSS reusability, transform3d/will-change, compressed files)
+
+Responsive design (mobile-first, optimized breakpoints)
+
+Particle effects, 3D transforms, SVG animations, advanced filters (backdrop-filter + drop-shadow)
+
+🎪 Final Goal
+Users should say:
+
+“Wait, this is a markdown file? Feels like a full-blown interactive website.”
+
+Deliver an interactive, visually overwhelming, immersive experience that becomes a masterpiece of CSS/UI/UX design.
